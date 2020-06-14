@@ -1,0 +1,18 @@
+.students{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .student{
+        flex-basis: 48%;
+        display: block;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        color: $dark-gray;
+        background-color: $light-gray;
+        transition: transform .3s;
+        &:hover{
+            transform: translateY(-7px)
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    .navbar-brand {
+        color: $blue;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    ul{
+       display: flex;
+       list-style: none;
+       a{
+           padding: .8rem 1rem;
+           text-decoration: none;
+           text-transform: uppercase;
+           font-size: 14px;
+           color: $blue;
+           border-bottom: 2px solid transparent;
+           transition: border .3s;
+           &.active,
+           &:hover{
+               border-bottom-color: $green;
+           }
+       }
+    }
+   }
